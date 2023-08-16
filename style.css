@@ -158,8 +158,7 @@ button {
   color: aqua;
 }
 
-/* .task .content input .text:check {
-  background: red;
+.line-through {
   text-decoration: line-through;
-  transition: 0.1;
-} */
+  text-decoration-style: wavy;
+}

@@ -39,7 +39,7 @@ window.addEventListener("load", () => {
 
     const task_done_el = document.createElement("button");
     task_done_el.classList.add("done");
-    task_done_el.innerText = "Done!";
+    task_done_el.innerText = "Done";
 
     task_actions_el.appendChild(task_edit_el);
     task_actions_el.appendChild(task_delete_el);
@@ -67,7 +67,13 @@ window.addEventListener("load", () => {
     });
 
     task_done_el.addEventListener("click", (e) => {
-      // in progress
+      if (task_done_el.innerText.toLowerCase() == "done") {
+        task_done_el.innerText = "Done!";
+        task_content_el.classList.add("line-through");
+      } else {
+        task_done_el.innerText = "Done";
+        task_content_el.classList.remove("line-through");
+      }
     });
   });
 });
