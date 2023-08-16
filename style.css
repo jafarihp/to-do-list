@@ -56,6 +56,12 @@ button {
   font-size: 1.25rem;
 }
 
+@media (319px < width < 415px) {
+  #new-task-input {
+    font-size: 1rem;
+  }
+}
+
 #new-task-input::placeholder {
   color: #6b7280;
 }
