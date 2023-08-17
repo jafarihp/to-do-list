@@ -168,3 +168,17 @@ button {
   text-decoration: line-through;
   text-decoration-style: wavy;
 }
+
+footer {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f2937;
+  color: #ec4899;
+}
+
+footer a:hover {
+  color: #ec4899;
+  transform: scaleY(1.5);
+}
